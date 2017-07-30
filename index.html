@@ -1,3 +1,4 @@
+<!--  a  -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,21 +6,51 @@
 </head>
 <body>
 
+<!-- This is where all the html and css is
+injected to create a flashcard over the game -->
+<!-- {{ -->
 <div id="overcard"> </div>
+<!-- }} -->
+
 
 <h1>Clicker</h1>
 
+
+<!-- This is the list of point stats
+that are changed when you click -->
+<!-- {{ -->
 <div id="topdiv" class="rowdiv">
 <div id="points" class="statElement">Points: 0</div>
 <div id="size" class="statElement">Click size: 1</div>
 <div id="machines" class="statElement">Machines: 0</div>
 <div id="speed" class="statElement">Speed: 100%</div>
 </div>
+<!-- }} -->
 
+
+<!-- This is a series of divs with background
+pictures that represent buttons -->
+<!-- {{ -->
 <div class="rowdiv">
 <div id="pic_point" class="rowElement"></div>
 <div id="pic_size" class="rowElement"></div>
 <div id="pic_machine" class="rowElement"></div>
 <div id="pic_speed" class="rowElement"></div>
+</div>
+<!-- }} -->
 
+<!-- This is a list of prices for the corresponding buttons -->
+<!-- {{ -->
+<div id="pricediv" class="rowdiv">
+<div id="price_points" class="priceElement">Free</div>
+<div id="price_size" class="priceElement">Cost: 1 point</div>
+<div id="price_machines" class="priceElement">Cost: 1 point</div>
+<div id="price_speed" class="priceElement">Cost: 1 point</div>
+</div>
+<!-- }} -->
 
+<div id="collecting">Reserved machines: 0</div>
+
+<div class="carddiv">
+<div id="study20" class="card_button">Study for 20% of reserved machines</div>
+<div id="test80" class="card_button">Test for 80% of reserved machines</div>
