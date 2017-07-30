@@ -1,0 +1,44 @@
+/*-------------------overlay CSS-----------------*/
+
+
+/* This part configures the overcard div that has
+zero size until html and css are changed by the click
+action of the study buttons. The z-index is two
+because it goes over the rest of the site.*/
+/* {{ */
+#overcard {
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    position: absolute;
+    width: 0px;
+    height: 0px; 
+}
+/* }} */
+
+
+/* This modifies a div that doesn't exist until it's injected
+into the html via the JS. That activates when you push a flashcard button.
+/* {{ */
+#overwhite {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+/* }} */
+
+/* This configures rows that arrange the four main buttons */
+/* {{ */
+.rowdiv {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+}
+/* }} */
+
+
