@@ -10,23 +10,7 @@ because it goes over the rest of the site.*/
 .nodisp {
     display: none;
 }
-#overcard {
-    justify-content: space-around;
-    z-index: 2;
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    margin: 5%;
-    border: double;
-    flex-direction: column;
-    
-}
 
-textarea {
-    z-index: 5;
-    width: 400px;
-    height: 400px;
-}
 /* }} */
 
 
@@ -45,19 +29,25 @@ into the html via the JS. That activates when you push a flashcard button.
     width: 100%;
     height: 100%;
     position: absolute; 
-/*
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    border: double;
-*/
 }
+#overcard {
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
 /* }} */
 
 .qna {
     width: 100%;
     height: 50%;
     z-index: 4;
+    flex-direction: column;
+    align-items: center; 
 }
 
 #overcard-question {
