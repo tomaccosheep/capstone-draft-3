@@ -11,6 +11,18 @@ because it goes over the rest of the site.*/
     justify-content: space-around;
     z-index: 2;
     position: absolute;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    border: double;
+    flex-direction: column;
+    
+}
+
+textarea {
+    z-index: 5;
+    width: 400px;
+    height: 400px;
 }
 /* }} */
 
@@ -19,15 +31,29 @@ because it goes over the rest of the site.*/
 into the html via the JS. That activates when you push a flashcard button.
 /* {{ */
 #overwhite {
-    position: absolute;
-    width: 90%;
-    height: 90%;
+    position: static;
+    width: 100%;
+    height: 100%;
     z-index: 3;
+/*
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    border: double;
+*/
 }
 /* }} */
+
+.qna {
+    width: 100%;
+    height: 50%;
+    z-index: 4;
+}
+
+#overcard-question {
+    border-bottom-style: double;
+}
+
 
 /* These determine the style of the text
 injected into the html elements in the
@@ -79,15 +105,20 @@ main four buttons */
     height: 40px;
 }
 
+#points {
+    display: flex;
+    justify-content: center;
+}
+
 #stat1 {
     width: 50%;
     text-align: right;
 }
 
 #stat2 {
-    width: 40%;
+    width: 50%;
     text-align: left;
-    margin: 0% 5% 0% 5%;
+    /*margin: 0% 5% 0% 5%;*/
 }
 
 /*--------------Buttons to bring flashcards--------------------*/
