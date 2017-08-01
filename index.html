@@ -9,7 +9,18 @@
 <!-- This is where all the html and css is
 injected to create a flashcard over the game -->
 <!-- {{ -->
-<div id="overcard-container"><div id="overcard"> </div></div>
+<div id="overcard-container" class="nodisp flashcard">
+    <img id="overwhite" class="nodisp flashcard" src="img/white.png" />
+    <div id="overcard" class="nodisp flashcard">
+        <div id="overcard-question" class="qna nodisp flashcard">Question Here
+        </div>
+        <form action="http://www.example.com/comments.php">aaa<div id="overcard-answer" class="qna nodisp flashcard">
+            <input type="textarea" name="answer_guess" class="nodisp flashcard" cols="20" rows="4">abab
+            </textarea>
+        </form>
+    </div>
+    </div>
+</div>
 <!-- }} -->
 
 

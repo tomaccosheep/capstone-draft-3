@@ -92,9 +92,10 @@ $("#pic_speed").click(function() {
 // }}
 
 $("#study20").click(function() {
-    $("#overcard").css('display', 'flex');
-    $("#overcard").html('<img id="overwhite" src="img/white.png" /> <div id="overcard-question" class="qna">aaaaaaaaaaaaa</div> <form action="http://www.example.com/comments.php">aaa<div id="overcard-answer" class="qna"><input type="textarea" name="answer_guess" rows="4">abab</textarea></form></div>');
-});
+    $(".flashcard").css('display', 'block');
+/*    $("#overcard").html('<div id="overcard-question" class="qna">aaaaaaaaaaaaa</div> <form action="http://www.example.com/comments.php">aaa<div id="overcard-answer" class="qna"><input type="textarea" name="answer_guess" rows="4">abab</textarea></form></div>'); */
+}); 
+
 
 updateSpeed = setInterval(update, 10);
 

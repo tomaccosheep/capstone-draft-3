@@ -6,8 +6,11 @@ zero size until html and css are changed by the click
 action of the study buttons. The z-index is two
 because it goes over the rest of the site.*/
 /* {{ */
-#overcard {
+
+.nodisp {
     display: none;
+}
+#overcard {
     justify-content: space-around;
     z-index: 2;
     position: absolute;
@@ -30,11 +33,18 @@ textarea {
 /* This modifies a div that doesn't exist until it's injected
 into the html via the JS. That activates when you push a flashcard button.
 /* {{ */
+#overcard-container {
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    border: double;
+}
 #overwhite {
-    position: static;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    position: absolute; 
 /*
     display: flex;
     justify-content: space-around;
