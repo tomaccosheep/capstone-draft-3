@@ -7,12 +7,10 @@ action of the study buttons. The z-index is two
 because it goes over the rest of the site.*/
 /* {{ */
 #overcard {
-    display: flex;
+    display: none;
     justify-content: space-around;
     z-index: 2;
     position: absolute;
-    width: 0px;
-    height: 0px; 
 }
 /* }} */
 
@@ -31,6 +29,25 @@ into the html via the JS. That activates when you push a flashcard button.
 }
 /* }} */
 
+/* These determine the style of the text
+injected into the html elements in the
+flashcards*/
+/* {{ */
+#question {
+    border-bottom-style: double;
+    text-align: center;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+}
+
+#answer {
+    text-align: center;
+}
+/* }} */
+
+
+/*---------------------------4 main click buttons---------------*/
+
 /* This configures rows that arrange the four main buttons */
 /* {{ */
 .rowdiv {
@@ -41,4 +58,67 @@ into the html via the JS. That activates when you push a flashcard button.
 }
 /* }} */
 
+.rowElement {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+/* This applies to the numbers above and below the
+main four buttons */
+/* {{ */
+.statElement {
+    width: 15%;
+    padding: 0% 7% 0% 7%;
+    text-align: center;
+}
+/* }} */
+
+#statElementDiv {
+    height: 40px;
+}
+
+#stat1 {
+    width: 50%;
+    text-align: right;
+}
+
+#stat2 {
+    width: 40%;
+    text-align: left;
+    margin: 0% 5% 0% 5%;
+}
+
+/*--------------Buttons to bring flashcards--------------------*/
+
+.carddiv {
+    display: flex;
+    flex-flow: row;
+}
+
+.card_button {
+    margin: 5px;
+    padding: 5px;
+    border-style: double;
+    border-width: 3px;
+}
+
+/*------------------------Misc------------------*/
+#collecting {
+    margin-top: 50px;
+}
+
+/* This is used to make text
+and pictures unselectable */
+/* {{ */
+.nosel {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+/* }} */

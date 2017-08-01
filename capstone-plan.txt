@@ -1,0 +1,16 @@
+.Work on the javascript
+...Make a system that locks out test card
+......Work on html next to test card button
+...Work on injecting HTML and CSS
+...Work on making a hover come up
+
+.Make the flashcard system
+...Make a list of nodes that refer to each other
+...Make two lists, "locked" and "unlocked", and put each node in one of those
+...Give every node a "study" string, higher-level nodes to refer to, an "unlock" number, and regex flags that it unlocks
+...Make a list of regex features that are flags for the regex generator
+
+.Make the regex generator
+...Make a function that takes in conditions and spits out a flashcard
+
+
