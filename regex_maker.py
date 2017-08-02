@@ -1,5 +1,6 @@
 import random
 import string
+import re
 
 regex_dict = {'digit': '\d', 'single_char': '[a-zA-Z]', 'space': '\s'}
 
@@ -56,7 +57,6 @@ def regex_nonselect_gen(selectme_string_list):
         nonselect_string_list.append("")
         for j in range(0, random.randrange(2,10,1)):
             nonselect_string_list[i] += regex_step_function(random.choice(list(regex_dict)))
-    print(str(nonselect_string_list))
     return nonselect_string_list
 
 def regex_question():
@@ -67,10 +67,16 @@ def regex_question():
         full_string += nonselect_string_list[i]
         full_string += selectme_string_list[i]
     full_string += nonselect_string_list[-1]
-    print(full_string)
+    regex_string = ""
+    for i in regex_list:
+        regex_string += i
+    regexed = re.findall(regex_string, full_string)
+    print("Full string: " + full_string)
     print("Find these ones: \n" + str(selectme_string_list))
-    print("Answer: " + str(regex_list))
-        
+    print("List answer: " + str(regex_list))
+    print("String answer: " + regex_string)
+    print("All answers: " + str(regexed))
+    
 
 """
 Before it asks the question, it should try to use the regex on the full string, just to verify

@@ -5,6 +5,6 @@
 ...Make a list of regex features that are flags for the regex generator
 
 .Make the regex generator
-...Make a function that takes in conditions and spits out a flashcard
-
+...Turn it into an object
+......Make it flag-based
 
