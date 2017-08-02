@@ -9,24 +9,16 @@ class Regexer:
     regex_dict = {'digit': '\d', 'single_char': '[a-zA-Z]', 'space': '\s'}
     # }}
     
-    # This is a flag to see if the list of acceptable regex conditions
-    # needs to be updated based on flags
-    # {{
-    regex_flag_update = False
-    # }}
-
     # This is a list of all opened types of regex
     # {{
-    open_regex = ['digit', 'single_char']
+    open_regex = ['digit', 'single_char', 'space']
     # }}
 
+    
     # This creates the Regexer object with a list of True/False flags
     # that control what regex can be created
     # {{
-    def __init__(self, flag_list):
-        self.digit_go = flag_list[0]
-        self.single_char_go = flag_list[1]
-        self.space_go = flag_list[2]
+    #def __init__(self):
     # }}
 
     
@@ -41,7 +33,7 @@ class Regexer:
         elif func_key == 'space':
             return ' '
     # }}
-    
+
     # This takes in a regex_list and shortens it, so that
     # two instances will turn into one instance with a coefficient
     # {{
@@ -113,3 +105,4 @@ class Regexer:
         print("List answer: " + str(regex_list))
         print("String answer: " + regex_string)
         print("All answers: " + str(regexed))
+        return [full_string, selectme_string_list, regex_list, regex_string, regexed]

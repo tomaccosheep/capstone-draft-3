@@ -91,11 +91,16 @@ $("#pic_speed").click(function() {
 });
 // }}
 
-$("#study20").click(function() {
+$(".card_button").click(function() {
     $(".flashcard").css('display', 'flex');
 /*    $("#overcard").html('<div id="overcard-question" class="qna">aaaaaaaaaaaaa</div> <form action="http://www.example.com/comments.php">aaa<div id="overcard-answer" class="qna"><input type="textarea" name="answer_guess" rows="4">abab</textarea></form></div>'); */
 }); 
 
+
+
+$(".cardFinished").click(function() {
+    $(".flashcard").css('display', 'none');
+}); 
 
 updateSpeed = setInterval(update, 10);
 

@@ -1,12 +1,6 @@
 .Make the flashcard system
 ...Make a list of nodes that refer to each other
-...Make two lists, "locked" and "unlocked", and put each node in one of those
-...Give every node a "study" string, higher-level nodes to refer to, an "unlock" number, and regex flags that it unlocks
-...Make a list of regex features that are flags for the regex generator
-
-.Make the regex generator
-...Turn it into an object
-......Make it flag-based
 
 
-
+.Move everything to Django
+...Ask Chris how I should position my code
